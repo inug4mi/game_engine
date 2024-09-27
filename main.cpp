@@ -11,8 +11,10 @@
 
 int main()
 {
+    GEngine::Constants constants;
+
     // engine window
-    GEngine::Renderer renderer(Constants::SCREEN_WIDTH, Constants::SCREEN_HEIGHT, "Engine window");
+    GEngine::Renderer renderer(constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT, "Engine window");
     renderer.wsetFramerateLimit(12);
 
     // engine shape
@@ -33,7 +35,7 @@ int main()
         renderer.wpollEvents();
         
         // background color
-        renderer.wclear(Constants::BG_COLOR);
+        renderer.wclear(constants.BG_COLOR);
 
         renderer.wdraw(figure1);
         renderer.wdraw(figure2);
