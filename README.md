@@ -1,4 +1,4 @@
-# Snake Game
+# Game Engine
 
-Snake game engine c++ SFML
+Game engine c++ SFML
 
