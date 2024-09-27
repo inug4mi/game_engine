@@ -2,7 +2,7 @@
 
 namespace GEngine{
     // Constructor
-    Variables::Variables() : pause(false), gameLost(false), score(0) {
+    Variables::Variables(){
         std::mt19937 gen(rd());
     }
 

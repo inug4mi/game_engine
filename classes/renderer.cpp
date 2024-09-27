@@ -26,7 +26,7 @@ namespace GEngine {
         window.setFramerateLimit(limit); // Set the framerate limit
     }
 
-    void Renderer::wpollEvents(GEngine::Variables &variables, sf::Vector2f &direction) {
+    void Renderer::wpollEvents() {
     
         while (window.pollEvent(event))
         {
@@ -36,40 +36,21 @@ namespace GEngine {
             if (event.type == sf::Event::KeyPressed)
             {
                 if (event.key.code == sf::Keyboard::Escape){
-                    if (!variables.gameLost){
-                        variables.pause = !variables.pause;
-                    }
+                    //pass
                 }
         
                 switch (event.key.code)
                 {
                     case sf::Keyboard::W:
-                        direction.x = 0.0f;
-                        if (direction.y == 0){
-                            direction.y = -Constants::MOVE_STEP;
-                        }
                         break;
                     
                     case sf::Keyboard::S:
-                        direction.x = 0.0f;
-                        if (direction.y == 0){
-                            direction.y = Constants::MOVE_STEP;
-                        }
                         break;
                     
                     case sf::Keyboard::A:
-                        direction.y = 0.0f;
-                        if (direction.x == 0){
-                            direction.x = -Constants::MOVE_STEP;
-        
-                        }
                         break;
         
                     case sf::Keyboard::D:
-                        direction.y = 0.0f;
-                        if (direction.x == 0){
-                            direction.x = Constants::MOVE_STEP;
-                        }
                         break;
         
                     default:

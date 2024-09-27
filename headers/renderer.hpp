@@ -24,7 +24,7 @@ namespace GEngine {
             window.draw(object);
         }
 
-        void wpollEvents(GEngine::Variables &variables, sf::Vector2f &direction);   
+        void wpollEvents();   
 
         // hacer privado variable window
         sf::RenderWindow window;  
