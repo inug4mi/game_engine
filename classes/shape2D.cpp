@@ -17,6 +17,24 @@ namespace GEngine{
         return rectangle;
     }
 
+    sf::CircleShape Shape2D::circle(double xi, double yi, double radius, sf::Color color){
+        sf::CircleShape circle(radius);
+        circle.setPosition(xi, yi);
+        circle.setFillColor(color);
+        return circle;
+    }
+
+    sf::VertexArray Shape2D::triangle(double xi1, double yi1, double xi2, double yi2, double xi3, double yi3, sf::Color color){
+        sf::VertexArray triangle(sf::Triangles, 3);
+        triangle[0].position = sf::Vector2f(xi1, yi1);
+        triangle[1].position = sf::Vector2f(xi2, yi2);
+        triangle[2].position = sf::Vector2f(xi3, yi3);
+        triangle[0].color = color;
+        triangle[1].color = color;
+        triangle[2].color = color;
+        return triangle;
+    }
+
     sf::VertexArray Shape2D::line(double xi, double yi, double xf, double yf, sf::Color color){
         sf::VertexArray line(sf::Lines, 2);
         line[0].position = sf::Vector2f(xi,yi);
