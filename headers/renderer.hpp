@@ -2,7 +2,6 @@
 
 #include <SFML/Graphics.hpp>
 #include <string>
-#include "variables.hpp"
 
 namespace GEngine {
     class Renderer {
