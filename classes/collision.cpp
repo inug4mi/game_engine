@@ -1,7 +1,7 @@
 #include "collision.hpp"
 
 namespace GEngine {
-    bool Collision::between(const sf::RectangleShape& shape1, const sf::RectangleShape& shape2) {
-        return shape1.getGlobalBounds().intersects(shape2.getGlobalBounds());
-    }
+    //bool Collision::between(const T& shape1, const sf::RectangleShape& shape2) {
+    //    return shape1.getGlobalBounds().intersects(shape2.getGlobalBounds());
+    //}
 }

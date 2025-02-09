@@ -5,8 +5,8 @@
 namespace GEngine{
     class Constants{
     public:
-        int SCREEN_WIDTH;
-        int SCREEN_HEIGHT;
+        unsigned int SCREEN_WIDTH;
+        unsigned int SCREEN_HEIGHT;
     
         const sf::Color RED = sf::Color(255,20,20);
 };

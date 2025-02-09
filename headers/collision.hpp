@@ -5,6 +5,9 @@
 namespace GEngine {
     class Collision {
     public:
-        bool between(const sf::RectangleShape& shape1, const sf::RectangleShape& shape2);
+        template <typename T>
+        bool between(const T &shape1, const T &shape2){
+            return shape1.getGlobalBounds().intersects(shape2.getGlobalBounds());
+        }
     };
 }
