@@ -5,8 +5,8 @@
 namespace GEngine{
     class Constants{
     public:
-        static constexpr int SCREEN_WIDTH = 500;
-        static constexpr int SCREEN_HEIGHT = 500;
+        int SCREEN_WIDTH;
+        int SCREEN_HEIGHT;
     
         const sf::Color BG_COLOR = sf::Color(15,15,15); 
         const sf::Color GRID_COLOR = sf::Color(30,30,30);
