@@ -15,7 +15,36 @@ namespace GEngine {
         renderer.wsetFramerateLimit(12);
 
         while (renderer.wisOpen()) {
-            renderer.wpollEvents();
+            while (renderer.window.pollEvent(renderer.event))
+            {
+                if (renderer.event.type == sf::Event::Closed)
+                    renderer.window.close();
+                
+                if (renderer.event.type == sf::Event::KeyPressed)
+                {
+                    if (renderer.event.key.code == sf::Keyboard::Escape){
+                        //pass
+                    }
+            
+                    switch (renderer.event.key.code)
+                    {
+                        case sf::Keyboard::W:
+                            break;
+                        
+                        case sf::Keyboard::S:
+                            break;
+                        
+                        case sf::Keyboard::A:
+                            break;
+            
+                        case sf::Keyboard::D:
+                            break;
+            
+                        default:
+                            break;
+                    }
+                }
+            }
             renderer.wclear(sf::Color(55,55,0));
 
             // render your game logic and stuff

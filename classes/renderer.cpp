@@ -26,38 +26,5 @@ namespace GEngine {
         window.setFramerateLimit(limit); // Set the framerate limit
     }
 
-    void Renderer::wpollEvents() {
-    
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-            
-            if (event.type == sf::Event::KeyPressed)
-            {
-                if (event.key.code == sf::Keyboard::Escape){
-                    //pass
-                }
-        
-                switch (event.key.code)
-                {
-                    case sf::Keyboard::W:
-                        break;
-                    
-                    case sf::Keyboard::S:
-                        break;
-                    
-                    case sf::Keyboard::A:
-                        break;
-        
-                    case sf::Keyboard::D:
-                        break;
-        
-                    default:
-                        break;
-                }
-            }
-        }
-    }
 
 }

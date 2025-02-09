@@ -23,8 +23,6 @@ namespace GEngine {
             window.draw(object);
         }
 
-        void wpollEvents();   
-
         // hacer privado variable window
         sf::RenderWindow window;  
         sf::Event event;         
