@@ -16,7 +16,7 @@ namespace GEngine {
 
         while (renderer.wisOpen()) {
             renderer.wpollEvents();
-            renderer.wclear(constants.BG_COLOR);
+            renderer.wclear(sf::Color(55,55,0));
 
             // render your game logic and stuff
             renderer.wdraw(figure1);
