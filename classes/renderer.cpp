@@ -1,5 +1,6 @@
 #include "renderer.hpp"
 #include "constants.hpp"
+
 namespace GEngine {
     Renderer::Renderer(int width, int height, const std::string &title) {
         window.create(sf::VideoMode(width, height), title, sf::Style::Close);

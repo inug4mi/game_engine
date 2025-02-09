@@ -1,5 +1,4 @@
 #include "shape2D.hpp"
-#include <iostream>
 
 namespace GEngine{
 
@@ -43,24 +42,5 @@ namespace GEngine{
         line[1].color = color;
         return line;
     }
-
-//    std::vector<sf::VertexArray> Shape2D::grid(){
-//        std::vector<sf::VertexArray> lines(Constants::GRID_SIZE*2+2);
-//        int currentIndex = 0;
-//        
-//        // horizontal lines
-//        for (int i = 0; i <= Constants::GRID_SIZE; i++){
-//            lines[currentIndex] = line(0, Constants::SNAKE_SIZE*i, Constants::SCREEN_WIDTH, Constants::SNAKE_SIZE*i, Constants::GRID_COLOR);
-//            currentIndex++;
-//        }
-//
-//        // verrical lines
-//        for (int i = 0; i <= Constants::GRID_SIZE; i++){
-//            lines[currentIndex] = line(Constants::SNAKE_SIZE*i,0,Constants::SNAKE_SIZE*i,Constants::SCREEN_HEIGHT, Constants::GRID_COLOR);
-//            currentIndex++;
-//        }
-//
-//        return lines;
-//    }
 
 }
